@@ -1,0 +1,16 @@
+Ce fichier donne la liste de tous les output existantes:
+
+:0::  TextureList::showErrors(
+:1::  TextureList::loadTextures(
+:2::  WindowEntity::addTexture(
+:3::  WindowEntity::actuateSprite(
+:4::  SpriteList::AddSprite(
+:5::  SpriteList::RemoveSprite(
+:6::
+:7::
+:8::
+:9::  Unoise::genPermTable(
+:10:: getWord(
+:11::
+:12::
+:13::

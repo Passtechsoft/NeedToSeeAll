@@ -1,0 +1,205 @@
+\hypertarget{class_player}{\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+}
+
+
+{\ttfamily \#include $<$entity.\-h$>$}
+
+
+
+Inheritance diagram for Player\-:
+
+
+Collaboration diagram for Player\-:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_player_ad1b5932229b5d87c3dbca5bfcacb6936}{Direction} \{ \hyperlink{class_player_ad1b5932229b5d87c3dbca5bfcacb6936a086ad5e6686e1540d2e0a09ca9ffc624}{Up}, 
+\hyperlink{class_player_ad1b5932229b5d87c3dbca5bfcacb6936af654e304331768c532162a09347a597f}{Down}, 
+\hyperlink{class_player_ad1b5932229b5d87c3dbca5bfcacb6936a21686ef8708bbb74f922069e23f2f2cf}{Front}, 
+\hyperlink{class_player_ad1b5932229b5d87c3dbca5bfcacb6936aa5ce1f24920b0fe17104ab08a9afb07a}{Back}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
+\item 
+\hyperlink{class_player_a6ac29a86604739284bdc303e219c3d32}{Player} (std\-::string name, unsigned int priority, std\-::string texture\-I\-D=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_player_a660212a54bd654ac1762467e00a2da31}{Player} (std\-::string name, unsigned int priority, unsigned int width, int position\-Y, std\-::string texture\-I\-D=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{class_player_a4297433163d2c6b6a82b5d71c5362466}{actualiser} (\hyperlink{class_ntsa_window}{Ntsa\-Window} $\ast$window)
+\item 
+void \hyperlink{class_player_a8710b5f12aafff7f5ae95e52775bdb04}{move\-Somewere} (\hyperlink{class_player_ad1b5932229b5d87c3dbca5bfcacb6936}{Direction} direction)
+\item 
+void \hyperlink{class_player_ab63c772d1598c64a7e4c4e34d33a52c5}{stabilize} ()
+\item 
+void \hyperlink{class_player_a478572d23809f9163fb6c9a3520f3dee}{stop\-Moving} ()
+\item 
+void \hyperlink{class_player_af8f3ac29d24141412375ddc872aa2e34}{set\-Speed\-Up\-Down} (int speed=3)
+\item 
+void \hyperlink{class_player_a34e0f244b1514104498166d6f2ce2906}{set\-Speed\-Front} (int speed=4)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file entity.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_player_ad1b5932229b5d87c3dbca5bfcacb6936}{\index{Player@{Player}!Direction@{Direction}}
+\index{Direction@{Direction}!Player@{Player}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Player\-::\-Direction}}}\label{class_player_ad1b5932229b5d87c3dbca5bfcacb6936}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Up@{Up}!Player@{Player}}\index{Player@{Player}!Up@{Up}}\item[{\em 
+\hypertarget{class_player_ad1b5932229b5d87c3dbca5bfcacb6936a086ad5e6686e1540d2e0a09ca9ffc624}{Up}\label{class_player_ad1b5932229b5d87c3dbca5bfcacb6936a086ad5e6686e1540d2e0a09ca9ffc624}
+}]\index{Down@{Down}!Player@{Player}}\index{Player@{Player}!Down@{Down}}\item[{\em 
+\hypertarget{class_player_ad1b5932229b5d87c3dbca5bfcacb6936af654e304331768c532162a09347a597f}{Down}\label{class_player_ad1b5932229b5d87c3dbca5bfcacb6936af654e304331768c532162a09347a597f}
+}]\index{Front@{Front}!Player@{Player}}\index{Player@{Player}!Front@{Front}}\item[{\em 
+\hypertarget{class_player_ad1b5932229b5d87c3dbca5bfcacb6936a21686ef8708bbb74f922069e23f2f2cf}{Front}\label{class_player_ad1b5932229b5d87c3dbca5bfcacb6936a21686ef8708bbb74f922069e23f2f2cf}
+}]\index{Back@{Back}!Player@{Player}}\index{Player@{Player}!Back@{Back}}\item[{\em 
+\hypertarget{class_player_ad1b5932229b5d87c3dbca5bfcacb6936aa5ce1f24920b0fe17104ab08a9afb07a}{Back}\label{class_player_ad1b5932229b5d87c3dbca5bfcacb6936aa5ce1f24920b0fe17104ab08a9afb07a}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 10 of file entity.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}
+
+
+Definition at line 6 of file entity.\-cpp.
+
+\hypertarget{class_player_a6ac29a86604739284bdc303e219c3d32}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{unsigned int}]{priority, }
+\item[{std\-::string}]{texture\-I\-D = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_player_a6ac29a86604739284bdc303e219c3d32}
+
+
+Definition at line 12 of file entity.\-cpp.
+
+\hypertarget{class_player_a660212a54bd654ac1762467e00a2da31}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{unsigned int}]{priority, }
+\item[{unsigned int}]{width, }
+\item[{int}]{position\-Y, }
+\item[{std\-::string}]{texture\-I\-D = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_player_a660212a54bd654ac1762467e00a2da31}
+
+
+Definition at line 19 of file entity.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_a4297433163d2c6b6a82b5d71c5362466}{\index{Player@{Player}!actualiser@{actualiser}}
+\index{actualiser@{actualiser}!Player@{Player}}
+\subsubsection[{actualiser}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::actualiser (
+\begin{DoxyParamCaption}
+\item[{{\bf Ntsa\-Window} $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{class_player_a4297433163d2c6b6a82b5d71c5362466}
+
+
+Definition at line 26 of file entity.\-cpp.
+
+
+
+Referenced by Ntsa\-Window\-::actualize().
+
+
+
+Here is the call graph for this function\-:
+
+
+\hypertarget{class_player_a8710b5f12aafff7f5ae95e52775bdb04}{\index{Player@{Player}!move\-Somewere@{move\-Somewere}}
+\index{move\-Somewere@{move\-Somewere}!Player@{Player}}
+\subsubsection[{move\-Somewere}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::move\-Somewere (
+\begin{DoxyParamCaption}
+\item[{{\bf Direction}}]{direction}
+\end{DoxyParamCaption}
+)}}\label{class_player_a8710b5f12aafff7f5ae95e52775bdb04}
+
+
+Definition at line 52 of file entity.\-cpp.
+
+
+
+Referenced by Ntsa\-Window\-::actualize().
+
+\hypertarget{class_player_a34e0f244b1514104498166d6f2ce2906}{\index{Player@{Player}!set\-Speed\-Front@{set\-Speed\-Front}}
+\index{set\-Speed\-Front@{set\-Speed\-Front}!Player@{Player}}
+\subsubsection[{set\-Speed\-Front}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::set\-Speed\-Front (
+\begin{DoxyParamCaption}
+\item[{int}]{speed = {\ttfamily 4}}
+\end{DoxyParamCaption}
+)}}\label{class_player_a34e0f244b1514104498166d6f2ce2906}
+\hypertarget{class_player_af8f3ac29d24141412375ddc872aa2e34}{\index{Player@{Player}!set\-Speed\-Up\-Down@{set\-Speed\-Up\-Down}}
+\index{set\-Speed\-Up\-Down@{set\-Speed\-Up\-Down}!Player@{Player}}
+\subsubsection[{set\-Speed\-Up\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::set\-Speed\-Up\-Down (
+\begin{DoxyParamCaption}
+\item[{int}]{speed = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)}}\label{class_player_af8f3ac29d24141412375ddc872aa2e34}
+\hypertarget{class_player_ab63c772d1598c64a7e4c4e34d33a52c5}{\index{Player@{Player}!stabilize@{stabilize}}
+\index{stabilize@{stabilize}!Player@{Player}}
+\subsubsection[{stabilize}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::stabilize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_ab63c772d1598c64a7e4c4e34d33a52c5}
+
+
+Definition at line 66 of file entity.\-cpp.
+
+
+
+Referenced by Ntsa\-Window\-::actualize().
+
+\hypertarget{class_player_a478572d23809f9163fb6c9a3520f3dee}{\index{Player@{Player}!stop\-Moving@{stop\-Moving}}
+\index{stop\-Moving@{stop\-Moving}!Player@{Player}}
+\subsubsection[{stop\-Moving}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::stop\-Moving (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_a478572d23809f9163fb6c9a3520f3dee}
+
+
+Definition at line 60 of file entity.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Game/\hyperlink{entity_8h}{entity.\-h}\item 
+src/\-Game/\hyperlink{entity_8cpp}{entity.\-cpp}\end{DoxyCompactItemize}

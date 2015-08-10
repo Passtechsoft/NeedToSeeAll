@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Unoise::DiamondPermTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_unoise_1_1_diamond_perm_table.html",tooltip="Stocke une table de permutation &quot;Diamond&quot;. "];
+}

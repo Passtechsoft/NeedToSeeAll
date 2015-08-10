@@ -1,0 +1,431 @@
+\hypertarget{utilities_8h}{\section{src/\-General/utilities.h File Reference}
+\label{utilities_8h}\index{src/\-General/utilities.\-h@{src/\-General/utilities.\-h}}
+}
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$sys/time.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$ostream$>$}\\*
+{\ttfamily \#include $<$array$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$queue$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+Include dependency graph for utilities.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_unoise_1_1_diamond_perm_table}{Unoise\-::\-Diamond\-Perm\-Table}
+\begin{DoxyCompactList}\small\item\em Stocke une table de permutation \char`\"{}\-Diamond\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_unoise}{Unoise}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_uchronia}{Uchronia} noise namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{utilities_8h_aef26ade3602d14eb964ae87184aae00e}{D\-E\-B\-U\-G\-M\-O\-D}
+\item 
+\#define \hyperlink{utilities_8h_a13cd3c33b3603e0b57d2d0744c411de3}{P\-R\-\_\-\-W\-H\-I\-T\-E}~30
+\item 
+\#define \hyperlink{utilities_8h_a84132e35e6574c53f808afdfd2f912c4}{P\-R\-\_\-\-R\-E\-D}~31
+\item 
+\#define \hyperlink{utilities_8h_a6e22edb41217878a4071d0d4fca44797}{P\-R\-\_\-\-G\-R\-E\-E\-N}~32
+\item 
+\#define \hyperlink{utilities_8h_a3f6d6e64b5bc3e9fe0700f0f01410d74}{P\-R\-\_\-\-Y\-E\-L\-L\-O\-W}~33
+\item 
+\#define \hyperlink{utilities_8h_a0382d53ae1847bfe75dfca06abb1a429}{P\-R\-\_\-\-B\-L\-U\-E}~34
+\item 
+\#define \hyperlink{utilities_8h_aa7280378cd45386f5e22c2bb93bb064c}{P\-R\-\_\-\-P\-U\-R\-P\-L\-E}~35
+\item 
+\#define \hyperlink{utilities_8h_a52efd9c68a31467dc1264602589ab057}{P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E}~36
+\item 
+\#define \hyperlink{utilities_8h_a1266b9f426819dd36243651569f96d09}{P\-R\-\_\-\-G\-R\-E\-Y}~37
+\item 
+\#define \hyperlink{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(param1, param)~std\-::cout$<$$<$\char`\"{}\textbackslash{}033\mbox{[}\char`\"{}$<$$<$param$<$$<$\char`\"{}m\char`\"{}$<$$<$param1$<$$<$\char`\"{}\textbackslash{}033\mbox{[}30m\char`\"{}$<$$<$std\-::endl
+\item 
+\#define \hyperlink{utilities_8h_a68a06cdb6de2f5020a7def6942eaccad}{P\-I\-M\-P}(txt)~\hyperlink{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}/!\textbackslash{}\textbackslash{}P\-I\-M\-P S\-P\-O\-T\-T\-E\-D/!\textbackslash{}\textbackslash{}\-: \char`\"{}$<$$<$txt, \hyperlink{utilities_8h_a52efd9c68a31467dc1264602589ab057}{P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E})
+\item 
+\#define \hyperlink{utilities_8h_a2308dd37abb259babc5baf6805bce76f}{D\-E\-B\-U\-G}(txt)~\hyperlink{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}D\-E\-B\-U\-G\-: \char`\"{}$<$$<$txt, \hyperlink{utilities_8h_a0382d53ae1847bfe75dfca06abb1a429}{P\-R\-\_\-\-B\-L\-U\-E})
+\item 
+\#define \hyperlink{utilities_8h_aec7008c0513b376e00b01637193ff746}{I\-N\-F\-O}(txt)~\hyperlink{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}I\-N\-F\-O\-: \char`\"{}$<$$<$txt, \hyperlink{utilities_8h_a1266b9f426819dd36243651569f96d09}{P\-R\-\_\-\-G\-R\-E\-Y})
+\item 
+\#define \hyperlink{utilities_8h_aeb7de637805f40ca1d6f9dd57423c922}{W\-A\-R\-N\-I\-N\-G}(txt)~\hyperlink{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}W\-A\-R\-N\-I\-N\-G\-: \char`\"{}$<$$<$txt, \hyperlink{utilities_8h_a3f6d6e64b5bc3e9fe0700f0f01410d74}{P\-R\-\_\-\-Y\-E\-L\-L\-O\-W})
+\item 
+\#define \hyperlink{utilities_8h_acae6718a3f55bf5d018a4b458d5492c0}{E\-R\-R\-O\-R}(txt)~\hyperlink{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}E\-R\-R\-O\-R\-: \char`\"{}$<$$<$txt, \hyperlink{utilities_8h_a84132e35e6574c53f808afdfd2f912c4}{P\-R\-\_\-\-R\-E\-D})
+\item 
+\#define \hyperlink{utilities_8h_aac9431e400a41b9c4d231c83e74c7729}{C\-R\-I\-T\-I\-C\-\_\-\-E\-R\-R\-O\-R}(txt)~\hyperlink{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}/!\textbackslash{}\textbackslash{}C\-R\-I\-T\-I\-C \hyperlink{utilities_8h_acae6718a3f55bf5d018a4b458d5492c0}{E\-R\-R\-O\-R}/!\textbackslash{}\textbackslash{}\-: \char`\"{}$<$$<$txt, \hyperlink{utilities_8h_aa7280378cd45386f5e22c2bb93bb064c}{P\-R\-\_\-\-P\-U\-R\-P\-L\-E});std\-::cout$<$$<$1/0$<$$<$std\-::endl
+\item 
+\#define \hyperlink{utilities_8h_a33b8df933d992ff1be22c0d05191c79e}{aff\-In\-Debug}(message, entree)~entree(message)
+\item 
+\#define \hyperlink{utilities_8h_a0d7644a795aa2dd33f01ef184f3f672a}{R\-A\-N\-D}(min, max)~( (rand() \% (max-\/min+1))+min )
+\item 
+\#define \hyperlink{utilities_8h_a7e9d6bf9d4bba615fca7196a16b33b4e}{C\-A\-R\-R\-E}(var)~(var$\ast$var)
+\item 
+\#define \hyperlink{utilities_8h_a6e2f5e51b142e0be9a976a8bdda7bd9d}{I\-S\-I\-N\-T\-E\-G\-R\-E\-R}(result)~(result==(int)result)
+\item 
+\#define \hyperlink{utilities_8h_aa536229c7484bedc4cb489147f5522de}{D\-I\-V\-I\-S\-I\-B\-L\-E\-\_\-\-P\-A\-R}(nbre, diviseur)~(nbre/((float)diviseur)==(short)nbre/diviseur)
+\item 
+\#define \hyperlink{utilities_8h_a5c7ba19c1dea5792082649d98514e3cd}{I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E}~4294967295
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{utilities_8h_a177317577dc144582370c8b7b8efc15d}{oct\-\_\-e}
+\item 
+typedef unsigned char \hyperlink{utilities_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}
+\item 
+typedef unsigned short \hyperlink{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{ushort}
+\item 
+typedef std\-::array$<$ unsigned \\*
+short, 256 $>$ \hyperlink{namespace_unoise_ae11142038f2dd1bea2711b2b99bbfaf6}{Unoise\-::\-Perm\-Table}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{utilities_8h_a06369ea5ee0568ca16b620f8faa80685}{probability} (int prob, int sur)
+\begin{DoxyCompactList}\small\item\em Permet de tester une certaine probabilité \end{DoxyCompactList}\item 
+float \hyperlink{utilities_8h_a21d81ae15fd90d0f392e4104be872296}{positif} (int a)
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre en positif. \end{DoxyCompactList}\item 
+long \hyperlink{utilities_8h_a403824cfb593887fa3fbf6f43daa080f}{cut\-Diz\-L} (const long \&l)
+\begin{DoxyCompactList}\small\item\em Cette fonction ne garde que les chiffres des unitées. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{utilities_8h_aed89159b1527605074e6ec1ddf945e69}{get\-Word} (\hyperlink{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{ushort} word\-\_\-num, std\-::string \&chaine)
+\begin{DoxyCompactList}\small\item\em Donne un mot dans une chaine. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_unoise_aa8daebdaad2fc5a125cd7b1acc7a38b4}{Unoise\-::set\-Perm\-Table} (Perm\-Table $\ast$perm)
+\begin{DoxyCompactList}\small\item\em Pas obligatoire, cette fonction permet de changer lambda\-Perm\-Table. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_unoise_a5dbbb2ae6c75efd29abd5663db08ec0e}{Unoise\-::set\-Seed} (int graine)
+\item 
+void \hyperlink{namespace_unoise_a5a1dbb7caee818c615fdfedc2ff19730}{Unoise\-::gen\-Perm\-Table} (Perm\-Table $\ast$, int)
+\begin{DoxyCompactList}\small\item\em On génère la table de permutation à partir d'un seed. \end{DoxyCompactList}\item 
+float \hyperlink{namespace_unoise_a77b87fa88183eb7081d3ea602989c59e}{Unoise\-::perlin\-Noise} (float x, float z, float res, Perm\-Table $\ast$perm=nullptr)
+\begin{DoxyCompactList}\small\item\em Fonction du bruit de perlin (float x, float z, float resolution, table de permutation)\-: \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::vector$<$ float $>$ $>$ \hyperlink{namespace_unoise_ad0e2cb05c23e202b63306e4f2adfb566}{Unoise\-::\-Diamond\-Square\-Noise\-Chunk} (float x, float z, float res, \hyperlink{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{ushort} taille\-Array=10, Diamond\-Perm\-Table $\ast$perm=nullptr)
+\begin{DoxyCompactList}\small\item\em Midpoint displacement noise, ou Diamond square noise (nom latin\-: carrus diamus) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{utilities_8h_a33b8df933d992ff1be22c0d05191c79e}{\index{utilities.\-h@{utilities.\-h}!aff\-In\-Debug@{aff\-In\-Debug}}
+\index{aff\-In\-Debug@{aff\-In\-Debug}!utilities.h@{utilities.\-h}}
+\subsubsection[{aff\-In\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}\#define aff\-In\-Debug(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{entree}
+\end{DoxyParamCaption}
+)~entree(message)}}\label{utilities_8h_a33b8df933d992ff1be22c0d05191c79e}
+
+
+Definition at line 45 of file utilities.\-h.
+
+
+
+Referenced by Window\-Entity\-::actuate\-Sprite(), Sprite\-List\-::\-Add\-Sprite(), Window\-Entity\-::add\-Texture(), Texture\-List\-::load\-Textures(), main(), Sprite\-List\-::\-Remove\-Sprite(), and Window\-Entity\-::\-Window\-Entity().
+
+\hypertarget{utilities_8h_a7e9d6bf9d4bba615fca7196a16b33b4e}{\index{utilities.\-h@{utilities.\-h}!C\-A\-R\-R\-E@{C\-A\-R\-R\-E}}
+\index{C\-A\-R\-R\-E@{C\-A\-R\-R\-E}!utilities.h@{utilities.\-h}}
+\subsubsection[{C\-A\-R\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-A\-R\-R\-E(
+\begin{DoxyParamCaption}
+\item[{}]{var}
+\end{DoxyParamCaption}
+)~(var$\ast$var)}}\label{utilities_8h_a7e9d6bf9d4bba615fca7196a16b33b4e}
+
+
+Definition at line 54 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}{\index{utilities.\-h@{utilities.\-h}!C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T@{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}}
+\index{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T@{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}!utilities.h@{utilities.\-h}}
+\subsubsection[{C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{param1, }
+\item[{}]{param}
+\end{DoxyParamCaption}
+)~std\-::cout$<$$<$\char`\"{}\textbackslash{}033\mbox{[}\char`\"{}$<$$<$param$<$$<$\char`\"{}m\char`\"{}$<$$<$param1$<$$<$\char`\"{}\textbackslash{}033\mbox{[}30m\char`\"{}$<$$<$std\-::endl}}\label{utilities_8h_a4531ebacd4bb0fbc8872c3fd30dd7edd}
+
+
+Definition at line 35 of file utilities.\-h.
+
+\hypertarget{utilities_8h_aac9431e400a41b9c4d231c83e74c7729}{\index{utilities.\-h@{utilities.\-h}!C\-R\-I\-T\-I\-C\-\_\-\-E\-R\-R\-O\-R@{C\-R\-I\-T\-I\-C\-\_\-\-E\-R\-R\-O\-R}}
+\index{C\-R\-I\-T\-I\-C\-\_\-\-E\-R\-R\-O\-R@{C\-R\-I\-T\-I\-C\-\_\-\-E\-R\-R\-O\-R}!utilities.h@{utilities.\-h}}
+\subsubsection[{C\-R\-I\-T\-I\-C\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-R\-I\-T\-I\-C\-\_\-\-E\-R\-R\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)~{\bf C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}/!\textbackslash{}\textbackslash{}C\-R\-I\-T\-I\-C {\bf E\-R\-R\-O\-R}/!\textbackslash{}\textbackslash{}\-: \char`\"{}$<$$<$txt, {\bf P\-R\-\_\-\-P\-U\-R\-P\-L\-E});std\-::cout$<$$<$1/0$<$$<$std\-::endl}}\label{utilities_8h_aac9431e400a41b9c4d231c83e74c7729}
+
+
+Definition at line 42 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a2308dd37abb259babc5baf6805bce76f}{\index{utilities.\-h@{utilities.\-h}!D\-E\-B\-U\-G@{D\-E\-B\-U\-G}}
+\index{D\-E\-B\-U\-G@{D\-E\-B\-U\-G}!utilities.h@{utilities.\-h}}
+\subsubsection[{D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-U\-G(
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)~{\bf C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}D\-E\-B\-U\-G\-: \char`\"{}$<$$<$txt, {\bf P\-R\-\_\-\-B\-L\-U\-E})}}\label{utilities_8h_a2308dd37abb259babc5baf6805bce76f}
+
+
+Definition at line 38 of file utilities.\-h.
+
+
+
+Referenced by Window\-Entity\-::actuate\-Sprite(), Sprite\-List\-::\-Add\-Sprite(), Texture\-List\-::load\-Textures(), main(), Sprite\-List\-::\-Remove\-Sprite(), and Window\-Entity\-::\-Window\-Entity().
+
+\hypertarget{utilities_8h_aef26ade3602d14eb964ae87184aae00e}{\index{utilities.\-h@{utilities.\-h}!D\-E\-B\-U\-G\-M\-O\-D@{D\-E\-B\-U\-G\-M\-O\-D}}
+\index{D\-E\-B\-U\-G\-M\-O\-D@{D\-E\-B\-U\-G\-M\-O\-D}!utilities.h@{utilities.\-h}}
+\subsubsection[{D\-E\-B\-U\-G\-M\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-U\-G\-M\-O\-D}}\label{utilities_8h_aef26ade3602d14eb964ae87184aae00e}
+
+
+Definition at line 5 of file utilities.\-h.
+
+\hypertarget{utilities_8h_aa536229c7484bedc4cb489147f5522de}{\index{utilities.\-h@{utilities.\-h}!D\-I\-V\-I\-S\-I\-B\-L\-E\-\_\-\-P\-A\-R@{D\-I\-V\-I\-S\-I\-B\-L\-E\-\_\-\-P\-A\-R}}
+\index{D\-I\-V\-I\-S\-I\-B\-L\-E\-\_\-\-P\-A\-R@{D\-I\-V\-I\-S\-I\-B\-L\-E\-\_\-\-P\-A\-R}!utilities.h@{utilities.\-h}}
+\subsubsection[{D\-I\-V\-I\-S\-I\-B\-L\-E\-\_\-\-P\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-V\-I\-S\-I\-B\-L\-E\-\_\-\-P\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{nbre, }
+\item[{}]{diviseur}
+\end{DoxyParamCaption}
+)~(nbre/((float)diviseur)==(short)nbre/diviseur)}}\label{utilities_8h_aa536229c7484bedc4cb489147f5522de}
+
+
+Definition at line 59 of file utilities.\-h.
+
+\hypertarget{utilities_8h_acae6718a3f55bf5d018a4b458d5492c0}{\index{utilities.\-h@{utilities.\-h}!E\-R\-R\-O\-R@{E\-R\-R\-O\-R}}
+\index{E\-R\-R\-O\-R@{E\-R\-R\-O\-R}!utilities.h@{utilities.\-h}}
+\subsubsection[{E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-R\-R\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)~{\bf C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}E\-R\-R\-O\-R\-: \char`\"{}$<$$<$txt, {\bf P\-R\-\_\-\-R\-E\-D})}}\label{utilities_8h_acae6718a3f55bf5d018a4b458d5492c0}
+
+
+Definition at line 41 of file utilities.\-h.
+
+
+
+Referenced by Window\-Entity\-::actuate\-Sprite(), Sprite\-List\-::\-Add\-Sprite(), and Texture\-List\-::load\-Textures().
+
+\hypertarget{utilities_8h_aec7008c0513b376e00b01637193ff746}{\index{utilities.\-h@{utilities.\-h}!I\-N\-F\-O@{I\-N\-F\-O}}
+\index{I\-N\-F\-O@{I\-N\-F\-O}!utilities.h@{utilities.\-h}}
+\subsubsection[{I\-N\-F\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-F\-O(
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)~{\bf C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}I\-N\-F\-O\-: \char`\"{}$<$$<$txt, {\bf P\-R\-\_\-\-G\-R\-E\-Y})}}\label{utilities_8h_aec7008c0513b376e00b01637193ff746}
+
+
+Definition at line 39 of file utilities.\-h.
+
+
+
+Referenced by Window\-Entity\-::actuate\-Sprite(), Sprite\-List\-::\-Add\-Sprite(), Window\-Entity\-::add\-Texture(), Texture\-List\-::load\-Textures(), and Window\-Entity\-::\-Window\-Entity().
+
+\hypertarget{utilities_8h_a5c7ba19c1dea5792082649d98514e3cd}{\index{utilities.\-h@{utilities.\-h}!I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E@{I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E}}
+\index{I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E@{I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E}!utilities.h@{utilities.\-h}}
+\subsubsection[{I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-T\-\_\-\-I\-M\-P\-R\-O\-B\-A\-B\-L\-E~4294967295}}\label{utilities_8h_a5c7ba19c1dea5792082649d98514e3cd}
+
+
+Definition at line 61 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a6e2f5e51b142e0be9a976a8bdda7bd9d}{\index{utilities.\-h@{utilities.\-h}!I\-S\-I\-N\-T\-E\-G\-R\-E\-R@{I\-S\-I\-N\-T\-E\-G\-R\-E\-R}}
+\index{I\-S\-I\-N\-T\-E\-G\-R\-E\-R@{I\-S\-I\-N\-T\-E\-G\-R\-E\-R}!utilities.h@{utilities.\-h}}
+\subsubsection[{I\-S\-I\-N\-T\-E\-G\-R\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-S\-I\-N\-T\-E\-G\-R\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{result}
+\end{DoxyParamCaption}
+)~(result==(int)result)}}\label{utilities_8h_a6e2f5e51b142e0be9a976a8bdda7bd9d}
+
+
+Definition at line 57 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a68a06cdb6de2f5020a7def6942eaccad}{\index{utilities.\-h@{utilities.\-h}!P\-I\-M\-P@{P\-I\-M\-P}}
+\index{P\-I\-M\-P@{P\-I\-M\-P}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-I\-M\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-I\-M\-P(
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)~{\bf C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}/!\textbackslash{}\textbackslash{}P\-I\-M\-P S\-P\-O\-T\-T\-E\-D/!\textbackslash{}\textbackslash{}\-: \char`\"{}$<$$<$txt, {\bf P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E})}}\label{utilities_8h_a68a06cdb6de2f5020a7def6942eaccad}
+
+
+Definition at line 37 of file utilities.\-h.
+
+
+
+Referenced by Player\-::actualiser().
+
+\hypertarget{utilities_8h_a0382d53ae1847bfe75dfca06abb1a429}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-B\-L\-U\-E@{P\-R\-\_\-\-B\-L\-U\-E}}
+\index{P\-R\-\_\-\-B\-L\-U\-E@{P\-R\-\_\-\-B\-L\-U\-E}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-B\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-B\-L\-U\-E~34}}\label{utilities_8h_a0382d53ae1847bfe75dfca06abb1a429}
+
+
+Definition at line 30 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a6e22edb41217878a4071d0d4fca44797}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-G\-R\-E\-E\-N@{P\-R\-\_\-\-G\-R\-E\-E\-N}}
+\index{P\-R\-\_\-\-G\-R\-E\-E\-N@{P\-R\-\_\-\-G\-R\-E\-E\-N}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-G\-R\-E\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-G\-R\-E\-E\-N~32}}\label{utilities_8h_a6e22edb41217878a4071d0d4fca44797}
+
+
+Definition at line 28 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a1266b9f426819dd36243651569f96d09}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-G\-R\-E\-Y@{P\-R\-\_\-\-G\-R\-E\-Y}}
+\index{P\-R\-\_\-\-G\-R\-E\-Y@{P\-R\-\_\-\-G\-R\-E\-Y}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-G\-R\-E\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-G\-R\-E\-Y~37}}\label{utilities_8h_a1266b9f426819dd36243651569f96d09}
+
+
+Definition at line 33 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a52efd9c68a31467dc1264602589ab057}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E@{P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E}}
+\index{P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E@{P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-L\-I\-G\-H\-T\-B\-L\-U\-E~36}}\label{utilities_8h_a52efd9c68a31467dc1264602589ab057}
+
+
+Definition at line 32 of file utilities.\-h.
+
+\hypertarget{utilities_8h_aa7280378cd45386f5e22c2bb93bb064c}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-P\-U\-R\-P\-L\-E@{P\-R\-\_\-\-P\-U\-R\-P\-L\-E}}
+\index{P\-R\-\_\-\-P\-U\-R\-P\-L\-E@{P\-R\-\_\-\-P\-U\-R\-P\-L\-E}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-P\-U\-R\-P\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-P\-U\-R\-P\-L\-E~35}}\label{utilities_8h_aa7280378cd45386f5e22c2bb93bb064c}
+
+
+Definition at line 31 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a84132e35e6574c53f808afdfd2f912c4}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-R\-E\-D@{P\-R\-\_\-\-R\-E\-D}}
+\index{P\-R\-\_\-\-R\-E\-D@{P\-R\-\_\-\-R\-E\-D}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-R\-E\-D~31}}\label{utilities_8h_a84132e35e6574c53f808afdfd2f912c4}
+
+
+Definition at line 27 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a13cd3c33b3603e0b57d2d0744c411de3}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-W\-H\-I\-T\-E@{P\-R\-\_\-\-W\-H\-I\-T\-E}}
+\index{P\-R\-\_\-\-W\-H\-I\-T\-E@{P\-R\-\_\-\-W\-H\-I\-T\-E}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-W\-H\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-W\-H\-I\-T\-E~30}}\label{utilities_8h_a13cd3c33b3603e0b57d2d0744c411de3}
+
+
+Definition at line 26 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a3f6d6e64b5bc3e9fe0700f0f01410d74}{\index{utilities.\-h@{utilities.\-h}!P\-R\-\_\-\-Y\-E\-L\-L\-O\-W@{P\-R\-\_\-\-Y\-E\-L\-L\-O\-W}}
+\index{P\-R\-\_\-\-Y\-E\-L\-L\-O\-W@{P\-R\-\_\-\-Y\-E\-L\-L\-O\-W}!utilities.h@{utilities.\-h}}
+\subsubsection[{P\-R\-\_\-\-Y\-E\-L\-L\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-\_\-\-Y\-E\-L\-L\-O\-W~33}}\label{utilities_8h_a3f6d6e64b5bc3e9fe0700f0f01410d74}
+
+
+Definition at line 29 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a0d7644a795aa2dd33f01ef184f3f672a}{\index{utilities.\-h@{utilities.\-h}!R\-A\-N\-D@{R\-A\-N\-D}}
+\index{R\-A\-N\-D@{R\-A\-N\-D}!utilities.h@{utilities.\-h}}
+\subsubsection[{R\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-A\-N\-D(
+\begin{DoxyParamCaption}
+\item[{}]{min, }
+\item[{}]{max}
+\end{DoxyParamCaption}
+)~( (rand() \% (max-\/min+1))+min )}}\label{utilities_8h_a0d7644a795aa2dd33f01ef184f3f672a}
+
+
+Definition at line 51 of file utilities.\-h.
+
+
+
+Referenced by probability().
+
+\hypertarget{utilities_8h_aeb7de637805f40ca1d6f9dd57423c922}{\index{utilities.\-h@{utilities.\-h}!W\-A\-R\-N\-I\-N\-G@{W\-A\-R\-N\-I\-N\-G}}
+\index{W\-A\-R\-N\-I\-N\-G@{W\-A\-R\-N\-I\-N\-G}!utilities.h@{utilities.\-h}}
+\subsubsection[{W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-A\-R\-N\-I\-N\-G(
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)~{\bf C\-O\-L\-O\-R\-E\-D\-\_\-\-P\-R\-I\-N\-T}(\char`\"{}W\-A\-R\-N\-I\-N\-G\-: \char`\"{}$<$$<$txt, {\bf P\-R\-\_\-\-Y\-E\-L\-L\-O\-W})}}\label{utilities_8h_aeb7de637805f40ca1d6f9dd57423c922}
+
+
+Definition at line 40 of file utilities.\-h.
+
+
+
+Referenced by Window\-Entity\-::add\-Texture(), get\-Word(), and Texture\-List\-::load\-Textures().
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{utilities_8h_a177317577dc144582370c8b7b8efc15d}{\index{utilities.\-h@{utilities.\-h}!oct\-\_\-e@{oct\-\_\-e}}
+\index{oct\-\_\-e@{oct\-\_\-e}!utilities.h@{utilities.\-h}}
+\subsubsection[{oct\-\_\-e}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf oct\-\_\-e}}}\label{utilities_8h_a177317577dc144582370c8b7b8efc15d}
+
+
+Definition at line 63 of file utilities.\-h.
+
+\hypertarget{utilities_8h_a65f85814a8290f9797005d3b28e7e5fc}{\index{utilities.\-h@{utilities.\-h}!uchar@{uchar}}
+\index{uchar@{uchar}!utilities.h@{utilities.\-h}}
+\subsubsection[{uchar}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf uchar}}}\label{utilities_8h_a65f85814a8290f9797005d3b28e7e5fc}
+
+
+Definition at line 64 of file utilities.\-h.
+
+\hypertarget{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{\index{utilities.\-h@{utilities.\-h}!ushort@{ushort}}
+\index{ushort@{ushort}!utilities.h@{utilities.\-h}}
+\subsubsection[{ushort}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf ushort}}}\label{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}
+
+
+Definition at line 65 of file utilities.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{utilities_8h_a403824cfb593887fa3fbf6f43daa080f}{\index{utilities.\-h@{utilities.\-h}!cut\-Diz\-L@{cut\-Diz\-L}}
+\index{cut\-Diz\-L@{cut\-Diz\-L}!utilities.h@{utilities.\-h}}
+\subsubsection[{cut\-Diz\-L}]{\setlength{\rightskip}{0pt plus 5cm}long cut\-Diz\-L (
+\begin{DoxyParamCaption}
+\item[{const long \&}]{l}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a403824cfb593887fa3fbf6f43daa080f}
+
+
+Cette fonction ne garde que les chiffres des unitées. 
+
+
+
+Definition at line 5 of file utilities.\-cpp.
+
+\hypertarget{utilities_8h_aed89159b1527605074e6ec1ddf945e69}{\index{utilities.\-h@{utilities.\-h}!get\-Word@{get\-Word}}
+\index{get\-Word@{get\-Word}!utilities.h@{utilities.\-h}}
+\subsubsection[{get\-Word}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string get\-Word (
+\begin{DoxyParamCaption}
+\item[{{\bf ushort}}]{word\-\_\-num, }
+\item[{std\-::string \&}]{chaine}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_aed89159b1527605074e6ec1ddf945e69}
+
+
+Donne un mot dans une chaine. 
+
+\hypertarget{utilities_8h_a21d81ae15fd90d0f392e4104be872296}{\index{utilities.\-h@{utilities.\-h}!positif@{positif}}
+\index{positif@{positif}!utilities.h@{utilities.\-h}}
+\subsubsection[{positif}]{\setlength{\rightskip}{0pt plus 5cm}float positif (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a21d81ae15fd90d0f392e4104be872296}
+
+
+Renvoie le nombre en positif. 
+
+
+
+Definition at line 37 of file utilities.\-cpp.
+
+\hypertarget{utilities_8h_a06369ea5ee0568ca16b620f8faa80685}{\index{utilities.\-h@{utilities.\-h}!probability@{probability}}
+\index{probability@{probability}!utilities.h@{utilities.\-h}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}bool probability (
+\begin{DoxyParamCaption}
+\item[{int}]{prob, }
+\item[{int}]{sur}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a06369ea5ee0568ca16b620f8faa80685}
+
+
+Permet de tester une certaine probabilité 
+
+
+
+Definition at line 13 of file utilities.\-cpp.
+

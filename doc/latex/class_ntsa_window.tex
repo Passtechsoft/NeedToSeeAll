@@ -1,0 +1,276 @@
+\hypertarget{class_ntsa_window}{\section{Ntsa\-Window Class Reference}
+\label{class_ntsa_window}\index{Ntsa\-Window@{Ntsa\-Window}}
+}
+
+
+{\ttfamily \#include $<$ntsa.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3}{Pos\-Names} \{ \hyperlink{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3a5959f03de015e8a12c91109a7ccd8ce2}{X}, 
+\hyperlink{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3ac63a6cdc64f8ce6c25e59baf4b53019f}{Y}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ntsa_window_a12b7135e87d1037a3924a2f5f5799431}{Ntsa\-Window} (\hyperlink{class_player}{Player} player)
+\item 
+\hyperlink{class_ntsa_window_a1b3f6c3be43c2ecfd108bacb1398f2b0}{Ntsa\-Window} (sf\-::\-Video\-Mode mode, const sf\-::\-String \&title, sf\-::\-Uint32 style=sf\-::\-Style\-::\-Default, const sf\-::\-Context\-Settings \&settings=sf\-::\-Context\-Settings())
+\item 
+\hyperlink{class_ntsa_window_aeeae6fee36b8479b8925b7f3ba792ed7}{Ntsa\-Window} (sf\-::\-Window\-Handle handle, const sf\-::\-Context\-Settings \&settings=sf\-::\-Context\-Settings())
+\item 
+float \hyperlink{class_ntsa_window_ac38da02f04c79bc387308a89cd178538}{get\-Relative\-Pos} (\hyperlink{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3}{Pos\-Names}, int factor)
+\item 
+void \hyperlink{class_ntsa_window_a67765090ed23a5ba93e29f9558e45351}{set\-Player} (\hyperlink{class_player}{Player} \&player)
+\item 
+void \hyperlink{class_ntsa_window_ac2991e96dd1dc556961623824ddf682a}{add\-Button} (\hyperlink{class_button}{Button})
+\item 
+void \hyperlink{class_ntsa_window_aa8d0a7e8928dc1e90a4ca3616218f192}{actualize} ()
+\item 
+void \hyperlink{class_ntsa_window_ab0b4de4b43e6aa20fc96fbcc0805bad1}{do\-Action} (std\-::string action)
+\item 
+int \hyperlink{class_ntsa_window_a8504a8160e6c88968662c55ea4587f6c}{get\-Size} (\hyperlink{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3}{Pos\-Names} pos)
+\item 
+sf\-::\-Render\-Window $\ast$ \hyperlink{class_ntsa_window_a100372715e96061ae0a06c848e81383f}{get\-Render\-Window} ()
+\item 
+std\-::pair$<$ int, int $>$ \hyperlink{class_ntsa_window_a04b0c18abd4bbe4a1785c633e17be351}{get\-Width\-Height} ()
+\item 
+void \hyperlink{class_ntsa_window_a2ed76648e64d49378d9107eadd65feec}{close} ()
+\item 
+void \hyperlink{class_ntsa_window_ab7f78dc06beb1fe676b21838f4f059e6}{draw} (sf\-::\-Sprite $\ast$sprite)
+\item 
+bool \hyperlink{class_ntsa_window_ad6b3a6571aeb24840953695a5ada4f42}{is\-Open} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file ntsa.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3}{\index{Ntsa\-Window@{Ntsa\-Window}!Pos\-Names@{Pos\-Names}}
+\index{Pos\-Names@{Pos\-Names}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{Pos\-Names}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Ntsa\-Window\-::\-Pos\-Names}}}\label{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{X@{X}!Ntsa\-Window@{Ntsa\-Window}}\index{Ntsa\-Window@{Ntsa\-Window}!X@{X}}\item[{\em 
+\hypertarget{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3a5959f03de015e8a12c91109a7ccd8ce2}{X}\label{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3a5959f03de015e8a12c91109a7ccd8ce2}
+}]\index{Y@{Y}!Ntsa\-Window@{Ntsa\-Window}}\index{Ntsa\-Window@{Ntsa\-Window}!Y@{Y}}\item[{\em 
+\hypertarget{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3ac63a6cdc64f8ce6c25e59baf4b53019f}{Y}\label{class_ntsa_window_ad45cc5b45dd664a1dd979041e8ab17a3ac63a6cdc64f8ce6c25e59baf4b53019f}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 13 of file ntsa.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_ntsa_window_a12b7135e87d1037a3924a2f5f5799431}{\index{Ntsa\-Window@{Ntsa\-Window}!Ntsa\-Window@{Ntsa\-Window}}
+\index{Ntsa\-Window@{Ntsa\-Window}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{Ntsa\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Ntsa\-Window\-::\-Ntsa\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{player}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_a12b7135e87d1037a3924a2f5f5799431}
+
+
+Definition at line 3 of file ntsa.\-cpp.
+
+\hypertarget{class_ntsa_window_a1b3f6c3be43c2ecfd108bacb1398f2b0}{\index{Ntsa\-Window@{Ntsa\-Window}!Ntsa\-Window@{Ntsa\-Window}}
+\index{Ntsa\-Window@{Ntsa\-Window}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{Ntsa\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Ntsa\-Window\-::\-Ntsa\-Window (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Video\-Mode}]{mode, }
+\item[{const sf\-::\-String \&}]{title, }
+\item[{sf\-::\-Uint32}]{style = {\ttfamily sf\-:\-:Style\-:\-:Default}, }
+\item[{const sf\-::\-Context\-Settings \&}]{settings = {\ttfamily sf\-:\-:ContextSettings()}}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_a1b3f6c3be43c2ecfd108bacb1398f2b0}
+
+
+Definition at line 8 of file ntsa.\-cpp.
+
+\hypertarget{class_ntsa_window_aeeae6fee36b8479b8925b7f3ba792ed7}{\index{Ntsa\-Window@{Ntsa\-Window}!Ntsa\-Window@{Ntsa\-Window}}
+\index{Ntsa\-Window@{Ntsa\-Window}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{Ntsa\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Ntsa\-Window\-::\-Ntsa\-Window (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Window\-Handle}]{handle, }
+\item[{const sf\-::\-Context\-Settings \&}]{settings = {\ttfamily sf\-:\-:ContextSettings()}}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_aeeae6fee36b8479b8925b7f3ba792ed7}
+
+
+Definition at line 14 of file ntsa.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ntsa_window_aa8d0a7e8928dc1e90a4ca3616218f192}{\index{Ntsa\-Window@{Ntsa\-Window}!actualize@{actualize}}
+\index{actualize@{actualize}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{actualize}]{\setlength{\rightskip}{0pt plus 5cm}void Ntsa\-Window\-::actualize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_aa8d0a7e8928dc1e90a4ca3616218f192}
+
+
+Definition at line 49 of file ntsa.\-cpp.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\-:
+
+
+\hypertarget{class_ntsa_window_ac2991e96dd1dc556961623824ddf682a}{\index{Ntsa\-Window@{Ntsa\-Window}!add\-Button@{add\-Button}}
+\index{add\-Button@{add\-Button}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{add\-Button}]{\setlength{\rightskip}{0pt plus 5cm}void Ntsa\-Window\-::add\-Button (
+\begin{DoxyParamCaption}
+\item[{{\bf Button}}]{button}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_ac2991e96dd1dc556961623824ddf682a}
+
+
+Definition at line 24 of file ntsa.\-cpp.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\-:
+
+
+\hypertarget{class_ntsa_window_a2ed76648e64d49378d9107eadd65feec}{\index{Ntsa\-Window@{Ntsa\-Window}!close@{close}}
+\index{close@{close}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void Ntsa\-Window\-::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ntsa_window_a2ed76648e64d49378d9107eadd65feec}
+
+
+Definition at line 31 of file ntsa.\-h.
+
+\hypertarget{class_ntsa_window_ab0b4de4b43e6aa20fc96fbcc0805bad1}{\index{Ntsa\-Window@{Ntsa\-Window}!do\-Action@{do\-Action}}
+\index{do\-Action@{do\-Action}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{do\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Ntsa\-Window\-::do\-Action (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{action}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_ab0b4de4b43e6aa20fc96fbcc0805bad1}
+
+
+Definition at line 29 of file ntsa.\-cpp.
+
+
+
+Referenced by actualize().
+
+\hypertarget{class_ntsa_window_ab7f78dc06beb1fe676b21838f4f059e6}{\index{Ntsa\-Window@{Ntsa\-Window}!draw@{draw}}
+\index{draw@{draw}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Ntsa\-Window\-::draw (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Sprite $\ast$}]{sprite}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ntsa_window_ab7f78dc06beb1fe676b21838f4f059e6}
+
+
+Definition at line 32 of file ntsa.\-h.
+
+\hypertarget{class_ntsa_window_ac38da02f04c79bc387308a89cd178538}{\index{Ntsa\-Window@{Ntsa\-Window}!get\-Relative\-Pos@{get\-Relative\-Pos}}
+\index{get\-Relative\-Pos@{get\-Relative\-Pos}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{get\-Relative\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}float Ntsa\-Window\-::get\-Relative\-Pos (
+\begin{DoxyParamCaption}
+\item[{{\bf Pos\-Names}}]{pos, }
+\item[{int}]{factor}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_ac38da02f04c79bc387308a89cd178538}
+
+
+Definition at line 35 of file ntsa.\-cpp.
+
+
+
+Referenced by main().
+
+\hypertarget{class_ntsa_window_a100372715e96061ae0a06c848e81383f}{\index{Ntsa\-Window@{Ntsa\-Window}!get\-Render\-Window@{get\-Render\-Window}}
+\index{get\-Render\-Window@{get\-Render\-Window}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{get\-Render\-Window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window$\ast$ Ntsa\-Window\-::get\-Render\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ntsa_window_a100372715e96061ae0a06c848e81383f}
+
+
+Definition at line 26 of file ntsa.\-h.
+
+\hypertarget{class_ntsa_window_a8504a8160e6c88968662c55ea4587f6c}{\index{Ntsa\-Window@{Ntsa\-Window}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Ntsa\-Window\-::get\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Pos\-Names}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_a8504a8160e6c88968662c55ea4587f6c}
+
+
+Definition at line 42 of file ntsa.\-cpp.
+
+
+
+Referenced by Player\-::actualiser().
+
+\hypertarget{class_ntsa_window_a04b0c18abd4bbe4a1785c633e17be351}{\index{Ntsa\-Window@{Ntsa\-Window}!get\-Width\-Height@{get\-Width\-Height}}
+\index{get\-Width\-Height@{get\-Width\-Height}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{get\-Width\-Height}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$int, int$>$ Ntsa\-Window\-::get\-Width\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_a04b0c18abd4bbe4a1785c633e17be351}
+\hypertarget{class_ntsa_window_ad6b3a6571aeb24840953695a5ada4f42}{\index{Ntsa\-Window@{Ntsa\-Window}!is\-Open@{is\-Open}}
+\index{is\-Open@{is\-Open}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{is\-Open}]{\setlength{\rightskip}{0pt plus 5cm}bool Ntsa\-Window\-::is\-Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ntsa_window_ad6b3a6571aeb24840953695a5ada4f42}
+
+
+Definition at line 33 of file ntsa.\-h.
+
+
+
+Referenced by main().
+
+\hypertarget{class_ntsa_window_a67765090ed23a5ba93e29f9558e45351}{\index{Ntsa\-Window@{Ntsa\-Window}!set\-Player@{set\-Player}}
+\index{set\-Player@{set\-Player}!NtsaWindow@{Ntsa\-Window}}
+\subsubsection[{set\-Player}]{\setlength{\rightskip}{0pt plus 5cm}void Ntsa\-Window\-::set\-Player (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{player}
+\end{DoxyParamCaption}
+)}}\label{class_ntsa_window_a67765090ed23a5ba93e29f9558e45351}
+
+
+Definition at line 19 of file ntsa.\-cpp.
+
+
+
+Referenced by main().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Game/\hyperlink{ntsa_8h}{ntsa.\-h}\item 
+src/\-Game/\hyperlink{ntsa_8cpp}{ntsa.\-cpp}\end{DoxyCompactItemize}

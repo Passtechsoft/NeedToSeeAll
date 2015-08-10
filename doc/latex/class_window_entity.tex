@@ -1,0 +1,299 @@
+\hypertarget{class_window_entity}{\section{Window\-Entity Class Reference}
+\label{class_window_entity}\index{Window\-Entity@{Window\-Entity}}
+}
+
+
+{\ttfamily \#include $<$general.\-h$>$}
+
+
+
+Inheritance diagram for Window\-Entity\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_window_entity_a71a1caf18fda6493100336a84bf62715}{Window\-Entity} ()
+\item 
+\hyperlink{class_window_entity_a13def047f2a274c96d5d5392c3787dca}{Window\-Entity} (std\-::string name, unsigned int priority, std\-::string texture\-I\-D=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{class_window_entity_aaad393d6c9f9f39266f300d930b4cebd}{add\-Texture} (std\-::string texture\-I\-D)
+\item 
+void \hyperlink{class_window_entity_a96642f3afc1b32491408f32f7b630de5}{set\-Zone} (int new\-Pos\-X, int new\-Pos\-Y, int new\-Width=0, int new\-Height=0)
+\item 
+void \hyperlink{class_window_entity_ab7346c852b1170154bb29d789e6ab3bc}{set\-Width\-Height} (int new\-Width, int new\-Height)
+\item 
+void \hyperlink{class_window_entity_ac4b71542f91338a80ea5189b87690699}{set\-Position} (int new\-Pos\-X, int new\-Pos\-Y)
+\item 
+std\-::string \hyperlink{class_window_entity_a0073a5b9c6d678b090a6b8b6b10c32e3}{get\-Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_window_entity_a5fc97093d697211a8685fad3115d5e30}{actuate\-Sprite} (unsigned int sprite\-Location=0, unsigned int texture\-Location=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ sf\-::\-Sprite $\ast$ $>$ \hyperlink{class_window_entity_aee3783d95265718dadb89afa15974d3a}{m\-\_\-sprites}
+\item 
+std\-::vector$<$ sf\-::\-Texture $\ast$ $>$ \hyperlink{class_window_entity_a253dbb3c77532a8a737f4cee7e7c5c81}{m\-\_\-textures}
+\item 
+std\-::string \hyperlink{class_window_entity_ae68db7c5aa5f1ad95a6c60091db3d441}{m\-\_\-name} =\char`\"{}Robert Paulson\char`\"{}
+\item 
+unsigned int \hyperlink{class_window_entity_a5903868e7d02e6e5b042a29f0b77f326}{m\-\_\-priority} =\hyperlink{general_8h_ac4b828e74900546129949acc44192072}{P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-C\-E\-N\-T\-E\-R}
+\item 
+int \hyperlink{class_window_entity_a68554f69aea32c7a4e12c95e75c2f5cc}{m\-\_\-pos\-X} =23
+\item 
+int \hyperlink{class_window_entity_a1ff34f975605e7f201228dc71798d6f2}{m\-\_\-pos\-Y} =23
+\item 
+int \hyperlink{class_window_entity_a243612b53cac6fea71040e9daf1da030}{m\-\_\-height} =23
+\item 
+int \hyperlink{class_window_entity_a9e7b56b5f91e5dd19b7c7a9d7bc587bf}{m\-\_\-width} =23
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file general.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_window_entity_a71a1caf18fda6493100336a84bf62715}{\index{Window\-Entity@{Window\-Entity}!Window\-Entity@{Window\-Entity}}
+\index{Window\-Entity@{Window\-Entity}!WindowEntity@{Window\-Entity}}
+\subsubsection[{Window\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Entity\-::\-Window\-Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_entity_a71a1caf18fda6493100336a84bf62715}
+
+
+Definition at line 137 of file general.\-cpp.
+
+\hypertarget{class_window_entity_a13def047f2a274c96d5d5392c3787dca}{\index{Window\-Entity@{Window\-Entity}!Window\-Entity@{Window\-Entity}}
+\index{Window\-Entity@{Window\-Entity}!WindowEntity@{Window\-Entity}}
+\subsubsection[{Window\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Entity\-::\-Window\-Entity (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{unsigned int}]{priority, }
+\item[{std\-::string}]{texture\-I\-D = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_window_entity_a13def047f2a274c96d5d5392c3787dca}
+
+
+Definition at line 142 of file general.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_window_entity_a5fc97093d697211a8685fad3115d5e30}{\index{Window\-Entity@{Window\-Entity}!actuate\-Sprite@{actuate\-Sprite}}
+\index{actuate\-Sprite@{actuate\-Sprite}!WindowEntity@{Window\-Entity}}
+\subsubsection[{actuate\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Entity\-::actuate\-Sprite (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{sprite\-Location = {\ttfamily 0}, }
+\item[{unsigned int}]{texture\-Location = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_a5fc97093d697211a8685fad3115d5e30}
+\begin{DoxyNote}{Note}
+check 1 
+\end{DoxyNote}
+
+
+Definition at line 151 of file general.\-cpp.
+
+
+
+Referenced by add\-Texture(), and set\-Zone().
+
+
+
+Here is the call graph for this function\-:
+
+
+\hypertarget{class_window_entity_aaad393d6c9f9f39266f300d930b4cebd}{\index{Window\-Entity@{Window\-Entity}!add\-Texture@{add\-Texture}}
+\index{add\-Texture@{add\-Texture}!WindowEntity@{Window\-Entity}}
+\subsubsection[{add\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Entity\-::add\-Texture (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{texture\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_window_entity_aaad393d6c9f9f39266f300d930b4cebd}
+
+
+Definition at line 187 of file general.\-cpp.
+
+
+
+Referenced by Window\-Entity().
+
+
+
+Here is the call graph for this function\-:
+
+
+\hypertarget{class_window_entity_a0073a5b9c6d678b090a6b8b6b10c32e3}{\index{Window\-Entity@{Window\-Entity}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!WindowEntity@{Window\-Entity}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Window\-Entity\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_window_entity_a0073a5b9c6d678b090a6b8b6b10c32e3}
+
+
+Definition at line 24 of file general.\-h.
+
+
+
+Referenced by Ntsa\-Window\-::add\-Button().
+
+\hypertarget{class_window_entity_ac4b71542f91338a80ea5189b87690699}{\index{Window\-Entity@{Window\-Entity}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!WindowEntity@{Window\-Entity}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Entity\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Pos\-X, }
+\item[{int}]{new\-Pos\-Y}
+\end{DoxyParamCaption}
+)}}\label{class_window_entity_ac4b71542f91338a80ea5189b87690699}
+
+
+Definition at line 212 of file general.\-cpp.
+
+\hypertarget{class_window_entity_ab7346c852b1170154bb29d789e6ab3bc}{\index{Window\-Entity@{Window\-Entity}!set\-Width\-Height@{set\-Width\-Height}}
+\index{set\-Width\-Height@{set\-Width\-Height}!WindowEntity@{Window\-Entity}}
+\subsubsection[{set\-Width\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Entity\-::set\-Width\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Width, }
+\item[{int}]{new\-Height}
+\end{DoxyParamCaption}
+)}}\label{class_window_entity_ab7346c852b1170154bb29d789e6ab3bc}
+
+
+Definition at line 218 of file general.\-cpp.
+
+\hypertarget{class_window_entity_a96642f3afc1b32491408f32f7b630de5}{\index{Window\-Entity@{Window\-Entity}!set\-Zone@{set\-Zone}}
+\index{set\-Zone@{set\-Zone}!WindowEntity@{Window\-Entity}}
+\subsubsection[{set\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Entity\-::set\-Zone (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Pos\-X, }
+\item[{int}]{new\-Pos\-Y, }
+\item[{int}]{new\-Width = {\ttfamily 0}, }
+\item[{int}]{new\-Height = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_window_entity_a96642f3afc1b32491408f32f7b630de5}
+\begin{DoxyNote}{Note}
+Check 1 
+\end{DoxyNote}
+
+
+Definition at line 200 of file general.\-cpp.
+
+
+
+Referenced by Button\-::\-Button(), and Player\-::\-Player().
+
+
+
+Here is the call graph for this function\-:
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_window_entity_a243612b53cac6fea71040e9daf1da030}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-height@{m\-\_\-height}}
+\index{m\-\_\-height@{m\-\_\-height}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-height}]{\setlength{\rightskip}{0pt plus 5cm}int Window\-Entity\-::m\-\_\-height =23\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_a243612b53cac6fea71040e9daf1da030}
+
+
+Definition at line 36 of file general.\-h.
+
+
+
+Referenced by Player\-::actualiser(), actuate\-Sprite(), Button\-::is\-Pressed(), set\-Width\-Height(), and set\-Zone().
+
+\hypertarget{class_window_entity_ae68db7c5aa5f1ad95a6c60091db3d441}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-name@{m\-\_\-name}}
+\index{m\-\_\-name@{m\-\_\-name}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Window\-Entity\-::m\-\_\-name =\char`\"{}Robert Paulson\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_ae68db7c5aa5f1ad95a6c60091db3d441}
+
+
+Definition at line 32 of file general.\-h.
+
+
+
+Referenced by actuate\-Sprite(), add\-Texture(), and get\-Name().
+
+\hypertarget{class_window_entity_a68554f69aea32c7a4e12c95e75c2f5cc}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-pos\-X@{m\-\_\-pos\-X}}
+\index{m\-\_\-pos\-X@{m\-\_\-pos\-X}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Window\-Entity\-::m\-\_\-pos\-X =23\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_a68554f69aea32c7a4e12c95e75c2f5cc}
+
+
+Definition at line 35 of file general.\-h.
+
+
+
+Referenced by Player\-::actualiser(), actuate\-Sprite(), Button\-::is\-Pressed(), Player\-::\-Player(), set\-Position(), and set\-Zone().
+
+\hypertarget{class_window_entity_a1ff34f975605e7f201228dc71798d6f2}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-pos\-Y@{m\-\_\-pos\-Y}}
+\index{m\-\_\-pos\-Y@{m\-\_\-pos\-Y}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Window\-Entity\-::m\-\_\-pos\-Y =23\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_a1ff34f975605e7f201228dc71798d6f2}
+
+
+Definition at line 35 of file general.\-h.
+
+
+
+Referenced by Player\-::actualiser(), actuate\-Sprite(), Button\-::is\-Pressed(), set\-Position(), and set\-Zone().
+
+\hypertarget{class_window_entity_a5903868e7d02e6e5b042a29f0b77f326}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-priority@{m\-\_\-priority}}
+\index{m\-\_\-priority@{m\-\_\-priority}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-priority}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Window\-Entity\-::m\-\_\-priority ={\bf P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-C\-E\-N\-T\-E\-R}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_a5903868e7d02e6e5b042a29f0b77f326}
+
+
+Definition at line 33 of file general.\-h.
+
+
+
+Referenced by actuate\-Sprite().
+
+\hypertarget{class_window_entity_aee3783d95265718dadb89afa15974d3a}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-sprites@{m\-\_\-sprites}}
+\index{m\-\_\-sprites@{m\-\_\-sprites}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-sprites}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$sf\-::\-Sprite$\ast$$>$ Window\-Entity\-::m\-\_\-sprites\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_aee3783d95265718dadb89afa15974d3a}
+
+
+Definition at line 29 of file general.\-h.
+
+
+
+Referenced by actuate\-Sprite().
+
+\hypertarget{class_window_entity_a253dbb3c77532a8a737f4cee7e7c5c81}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-textures@{m\-\_\-textures}}
+\index{m\-\_\-textures@{m\-\_\-textures}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-textures}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$sf\-::\-Texture$\ast$$>$ Window\-Entity\-::m\-\_\-textures\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_a253dbb3c77532a8a737f4cee7e7c5c81}
+
+
+Definition at line 30 of file general.\-h.
+
+
+
+Referenced by actuate\-Sprite(), add\-Texture(), and set\-Zone().
+
+\hypertarget{class_window_entity_a9e7b56b5f91e5dd19b7c7a9d7bc587bf}{\index{Window\-Entity@{Window\-Entity}!m\-\_\-width@{m\-\_\-width}}
+\index{m\-\_\-width@{m\-\_\-width}!WindowEntity@{Window\-Entity}}
+\subsubsection[{m\-\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}int Window\-Entity\-::m\-\_\-width =23\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_window_entity_a9e7b56b5f91e5dd19b7c7a9d7bc587bf}
+
+
+Definition at line 36 of file general.\-h.
+
+
+
+Referenced by actuate\-Sprite(), Button\-::is\-Pressed(), set\-Width\-Height(), and set\-Zone().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-General/\hyperlink{general_8h}{general.\-h}\item 
+src/\-General/\hyperlink{general_8cpp}{general.\-cpp}\end{DoxyCompactItemize}

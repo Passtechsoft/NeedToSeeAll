@@ -1,0 +1,103 @@
+\hypertarget{utilities_8cpp}{\section{src/\-General/utilities.cpp File Reference}
+\label{utilities_8cpp}\index{src/\-General/utilities.\-cpp@{src/\-General/utilities.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+Include dependency graph for utilities.\-cpp\-:
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_uchronia}{Uchronia}
+\item 
+\hyperlink{namespace_unoise}{Unoise}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_uchronia}{Uchronia} noise namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{utilities_8cpp_a403824cfb593887fa3fbf6f43daa080f}{cut\-Diz\-L} (const long \&l)
+\begin{DoxyCompactList}\small\item\em Cette fonction ne garde que les chiffres des unitées. \end{DoxyCompactList}\item 
+bool \hyperlink{utilities_8cpp_a06369ea5ee0568ca16b620f8faa80685}{probability} (int prob, int sur)
+\begin{DoxyCompactList}\small\item\em Permet de tester une certaine probabilité \end{DoxyCompactList}\item 
+string \hyperlink{utilities_8cpp_a366a670171ff9c2a7ee2a5eb953c83e3}{get\-Word} (\hyperlink{utilities_8h_ab95f123a6c9bcfee6a343170ef8c5f69}{ushort} word\-\_\-num, string \&chaine)
+\item 
+float \hyperlink{utilities_8cpp_a21d81ae15fd90d0f392e4104be872296}{positif} (int a)
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre en positif. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_unoise_a5dbbb2ae6c75efd29abd5663db08ec0e}{Unoise\-::set\-Seed} (int graine)
+\item 
+void \hyperlink{namespace_unoise_aa8daebdaad2fc5a125cd7b1acc7a38b4}{Unoise\-::set\-Perm\-Table} (Perm\-Table $\ast$perm)
+\begin{DoxyCompactList}\small\item\em Pas obligatoire, cette fonction permet de changer lambda\-Perm\-Table. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_unoise_a5a1dbb7caee818c615fdfedc2ff19730}{Unoise\-::gen\-Perm\-Table} (Perm\-Table $\ast$, int)
+\begin{DoxyCompactList}\small\item\em On génère la table de permutation à partir d'un seed. \end{DoxyCompactList}\item 
+float \hyperlink{namespace_unoise_a77b87fa88183eb7081d3ea602989c59e}{Unoise\-::perlin\-Noise} (float x, float z, float res, Perm\-Table $\ast$perm=nullptr)
+\begin{DoxyCompactList}\small\item\em Fonction du bruit de perlin (float x, float z, float resolution, table de permutation)\-: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Perm\-Table $\ast$ \hyperlink{namespace_unoise_acf4515c07424188371eeb9cf77d34fb3}{Unoise\-::lambda\-Perm\-Table} =nullptr
+\item 
+Diamond\-Perm\-Table $\ast$ \hyperlink{namespace_unoise_a6a176d9cfecf775dc5366165a3504a12}{Unoise\-::lambda\-Diams\-Perm\-Table} =nullptr
+\item 
+int \hyperlink{namespace_unoise_ae6356ffd0fec247f6d19c762e1757fc3}{Unoise\-::seed} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{utilities_8cpp_a403824cfb593887fa3fbf6f43daa080f}{\index{utilities.\-cpp@{utilities.\-cpp}!cut\-Diz\-L@{cut\-Diz\-L}}
+\index{cut\-Diz\-L@{cut\-Diz\-L}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{cut\-Diz\-L}]{\setlength{\rightskip}{0pt plus 5cm}long cut\-Diz\-L (
+\begin{DoxyParamCaption}
+\item[{const long \&}]{l}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a403824cfb593887fa3fbf6f43daa080f}
+
+
+Cette fonction ne garde que les chiffres des unitées. 
+
+
+
+Definition at line 5 of file utilities.\-cpp.
+
+\hypertarget{utilities_8cpp_a366a670171ff9c2a7ee2a5eb953c83e3}{\index{utilities.\-cpp@{utilities.\-cpp}!get\-Word@{get\-Word}}
+\index{get\-Word@{get\-Word}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{get\-Word}]{\setlength{\rightskip}{0pt plus 5cm}string get\-Word (
+\begin{DoxyParamCaption}
+\item[{{\bf ushort}}]{word\-\_\-num, }
+\item[{string \&}]{chaine}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a366a670171ff9c2a7ee2a5eb953c83e3}
+
+
+Definition at line 18 of file utilities.\-cpp.
+
+\hypertarget{utilities_8cpp_a21d81ae15fd90d0f392e4104be872296}{\index{utilities.\-cpp@{utilities.\-cpp}!positif@{positif}}
+\index{positif@{positif}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{positif}]{\setlength{\rightskip}{0pt plus 5cm}float positif (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a21d81ae15fd90d0f392e4104be872296}
+
+
+Renvoie le nombre en positif. 
+
+
+
+Definition at line 37 of file utilities.\-cpp.
+
+\hypertarget{utilities_8cpp_a06369ea5ee0568ca16b620f8faa80685}{\index{utilities.\-cpp@{utilities.\-cpp}!probability@{probability}}
+\index{probability@{probability}!utilities.cpp@{utilities.\-cpp}}
+\subsubsection[{probability}]{\setlength{\rightskip}{0pt plus 5cm}bool probability (
+\begin{DoxyParamCaption}
+\item[{int}]{prob, }
+\item[{int}]{sur}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cpp_a06369ea5ee0568ca16b620f8faa80685}
+
+
+Permet de tester une certaine probabilité 
+
+
+
+Definition at line 13 of file utilities.\-cpp.
+
